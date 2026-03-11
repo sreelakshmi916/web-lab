@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript</title>
+<script>
+function check()
+{
+	let val=document.getElementById("user").value;
+	let pattern=/^aa+$/;
+	if(pattern.test(val))
+	{
+		console.log("Pass");
+		return "Pass";
+	}
+	else
+	{
+		console.log("false");
+		return false;
+	}
+}
+</script>
+</head>
+<body>
+Username:<input type="text" id="user" required>
+<input type="button" value="submit" onclick="check()">
+</body>
+</html>
