@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>loginpage</title>
+	<script>
+	function checkvalue()
+	{
+		let user=document.getElementById("email").value;
+		let pattern=/\w+@\w+\.\w+/;
+		if(pattern.test(user))
+		{
+			console.log("Correct");
+			return true;
+		}
+		else
+		{
+			console.log("Incorrect");
+			return false;
+		}
+	}
+	</script>
+</head>
+<body>
+<h2 align="center">Welcome to my page!!</h2>
+Username:<input type="email" id="email" placeholder="name@gamil.com"><br><br>
+Password:<input type="text" id="password" placeholder="abc@"><br><br>
+<input type="submit" value="submit" id="btn" onclick=checkvalue()>
+<script>
+document.getElementById("btn").addEventListener("click",function()
+	{
+		let password=document.getElementById("password").value;
+		if(pattern.value < 4&& pattern.value>8)
+		{
+			console.log("Correct");
+			return true;
+		}
+		else
+		{
+			console.log("Incorrect");
+			return false;
+		}
+	});
+</script>
+</body>
+</html>
